@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>get to know me</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- BACKGROUND -->
+<canvas id="particles"></canvas>
+
+<!-- AAA MENU -->
+<section class="menu-screen">
+
+    <img src="profile pic for pf.jpg" class="profile-pic">
+
+  <h1 class="game-title">Hi my name is Jered G. Valdez</h1>
+  <p class="subtitle">system designer & web developer</p>
+
+  <div class="menu-buttons">
+    <button onclick="document.getElementById('projects').scrollIntoView()">▶ Projects</button>
+    <button onclick="document.getElementById('about').scrollIntoView()">ℹ About</button>
+    <button onclick="document.getElementById('contact').scrollIntoView()">✉ Contact</button>
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate Computer Science graduate focused on web development, app design, and game development. I enjoy building interactive and user-friendly digital experiences using clean and modern design principles. I am continuously improving my skills in front-end development, UI/UX design, and basic game creation. I am also interested in creating systems that solve real-world problems and improve user experienc
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2>My Projects</h2>
+
+  <div class="grid">
+
+    <div class="card" onclick="openGallery(['project1.jpg'])">
+      <img src="game.jpg">
+      <h3>My first game project</h3>
+    </div>
+
+    <div class="card" onclick="openGallery(['project2.jpg'])">
+      <img src="event.jpg">
+      <h3>Event Experience</h3>
+    </div>
+
+    <div class="card" onclick="openGallery(['project3.jpg'])">
+      <img src="web.jpg">
+      <h3>Web developing</h3>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMMUNICATION INTERN SLIDES -->
+<section id="intern" class="intern">
+
+  <h2>Communication Internship Experience</h2>
+
+  <div class="slide-container">
+
+    <div class="slide">
+      <h3>Role Overview</h3>
+      <p>
+        I supporting event-related communication tasks in a fast-paced environment.
+      </p>
+    </div>
+
+    <div class="slide">
+      <h3>Key Responsibilities</h3>
+      <p>
+        • Assisted in organizing events and team coordination<br>
+        • Helped manage communication between teams and organizers<br>
+        • Supported documentation and reporting tasks
+      </p>
+    </div>
+
+    <div class="slide">
+      <h3>Skills Developed</h3>
+      <p>
+        • Communication & teamwork<br>
+        • Time management<br>
+        • Problem-solving in real-world situations<br>
+        • Event coordination experience
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SOCIAL CONTACT -->
+<div class="social-links">
+
+  <a href="https://www.facebook.com/jed.valdez.315" target="_blank" title="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/jered-valdez-485976239/" target="_blank" title="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://github.com/jeredFLIPO" target="_blank" title="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="modalImg">
+  <button onclick="nextImage()">Next</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
